@@ -1,7 +1,3 @@
-import http from 'http';
+import lawyerProvider from './provider/lawyers.js';
 
-const server = http.createServer( (req, res) => {
-    res.write('foo');
-    res.end();
-});
-server.listen(4433);
+lawyerProvider().getLawyer().then( data => console.log(data)).catch(err => console.error(err));
