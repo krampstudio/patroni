@@ -10,6 +10,9 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
 
+    //load config and metadata
+        pkg: grunt.file.readJSON('package.json'),
+
     //tasks default configuration/options
         browserify: {
             options: {
