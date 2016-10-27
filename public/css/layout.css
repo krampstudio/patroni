@@ -1,0 +1,23 @@
+
+body {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+header {
+  height: 200px;
+  background-color: purple;
+  padding: 10px;
+}
+main {
+  flex: 1;
+  background-color: magenta;
+  overflow-y:scroll;
+  padding: 10px;
+}
+footer {
+  height: 100px;
+  background-color: grey;
+  padding: 10px;
+}
